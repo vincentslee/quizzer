@@ -19,29 +19,29 @@ var time = 30;
 var score = 0;
 var questionlist = [
 	{
-		question: "What is 10/2?",
+		question: "Is javascript a programming language?",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '115'
+			a: 'no',
+			b: 'yes',
+			c: 'maybe'
 		},
 		correctAnswer: 'b'
 	},
 	{
-		question: "What is 30/3?",
+		question: "How do you define a variable in javascript?",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '10'
+			a: 'car',
+			b: 'char',
+			c: 'var'
 		},
 		correctAnswer: 'c'
   },
   {
-		question: "What is 2+2?",
+		question: "Can you create objects in javascript?",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '4'
+			a: 'maybe',
+			b: 'no',
+			c: 'yes'
 		},
 		correctAnswer: 'c'
   }

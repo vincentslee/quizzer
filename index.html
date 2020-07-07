@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      
+      <header>
+        <!--start button-->
+        <div>
+          <button id="start" class="btn">Start</button>
+        </div>
+        <!-- Timer display-->
+        <h1 id="timer">Time Left: 60 seconds</h1>
+        
+      </header>
+      
+      
+      
+      <div class="card">
+
+        
+        <!-- Question-->
+        <div class="card-header">
+          <h2 id="question"></h2>
+        </div>
+        
+        <!--Scorescreen-->
+        <div class="card-body" id="scorescreen">
+          <h3 id="showscore">Score</h3>
+          <form method="post">
+            <div class="input-group">
+              <label for="fname">Initials: </label>
+              <input type="text" name="fname" id="fname"/>
+
+              <button id="save">Save Score</button>
+              <button id="clear">Clear</button>
+            </div>
+          </form>
+          <p id="scores">
+
+          </p>
+        </div>
+
+        <!--Answer box-->
+        <div class="card-body" id="box">
+          <div id="quizbox">
+            <button id="a" class="btn"></button>
+            <button id="b" class="btn"></button>
+            <button id="c" class="btn"></button>
+          </div>
+          
+        </div>
+
+        <!--Submit button-->
+        <div class="card-footer">
+          <button id="submit" class="btn">Submit</button>
+          
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

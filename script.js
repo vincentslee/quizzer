@@ -81,27 +81,29 @@ var initialsave = localStorage.getItem("initialsave");
 var scoresave = localStorage.getItem("scoresave");
 
 clear.addEventListener("click", function(){
+  event.preventDefault();
   localStorage.clear();
+  renderscores();
 })
 
 function renderscores() {
   var initialsave = localStorage.getItem("initialsave");
   var scoresave = localStorage.getItem("scoresave");
-  scores.textContent = (initialsave+": "+scoresave)
+  if(initialsave==null || scoresave==null){
+    scores.textContent = '';
+    console.log("null");
+  }
+  else{
+    scores.textContent = (initialsave+": "+scoresave);
+  }
+
 }
 
 function highscores() {
   document.getElementById("showscore").textContent = ("Score: "+score);
   console.log("done");
   derender();
-
-  if(initialsave===null){
-    console.log(initialsave);
-    
-  }
-  else{
-    renderscores();
-  }
+  renderscores();
 
   save.addEventListener("click", function(){
     event.preventDefault();
